@@ -83,7 +83,7 @@ const WaitlistForm: React.FC = () => {
     <Box my="20" >
       <Box as={motion.div} ref={ref} style={{ scale: scaleProgress, opacity: opacityProgress }} transformOrigin='bottom' p={4} maxW='1300px' mx='auto' textAlign='center' mt={14}>
       <Box w={['full', ]} mb={5}>
-     <Text fontSize={["lg", "x-large", "xx-large"]}fontWeight="bold" mb={1}>
+     <Text fontSize={["lg", "x-large", "xx-large"]}fontWeight="bold" mb={4}>
         Elevate Your Finances Together
       </Text>
       <Text mb={2} fontSize={['sm', 'md', 'lg']} >
@@ -96,7 +96,7 @@ const WaitlistForm: React.FC = () => {
         <form onSubmit={handleFormSubmit}>
         <Box display={['grid','grid','flex']} maxW='70%' mx='auto' alignItems='center' gap={3} w='full'> 
       
-                   <FormControl isRequired>
+                   <FormControl isRequired mt={4}>
          {/* <FormLabel htmlFor="email" textAlign='center'  mb={2}>Email</FormLabel> */}
          <Input type="email" id="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} required />
          </FormControl>

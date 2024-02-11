@@ -17,7 +17,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
     <Box p={4} textAlign="center" >
       <Icon as={icon} color='blue.300' boxSize={[10,12,14]} />
       <Box mt={3}>
-        <Text fontWeight="700" fontSize={["md", "lg"]}>
+        <Text fontWeight="700" my={3} fontSize={["md", "lg"]}>
           {title}
         </Text>
         <Text fontSize={["sm", "md"]}>{description}</Text>
@@ -39,7 +39,7 @@ const CardFeatures = () => {
     <Box as={motion.div} ref={ref} style={{ scale: scaleProgress, opacity: opacityProgress }}  transformOrigin='center' my={20}   className="margin" >
       <Text px='20px'textAlign='center'  mb={8}  fontWeight="700" fontSize={["lg", "x-large", "xx-large"]}> Card Features</Text>
 
-      <Grid templateRows={["repeat(2, 1fr)", "repeat(2, 1fr)"]} 
+      <Grid templateRows={["repeat(2, 1fr)", "repeat(2, 1fr)"]}  gap={[5,4,3,2]}
       templateColumns={["1fr", "1fr", "repeat(2, 1fr)"]} maxW='1000px' mx='auto'>
         <FeatureCard
           icon={LuBadgeDollarSign}
