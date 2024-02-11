@@ -36,8 +36,8 @@ const CardFeatures = () => {
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1.6]);
 
   return (
-    <Box as={motion.div} ref={ref} style={{ scale: scaleProgress, opacity: opacityProgress }} mb={10} mt={[10,14, 18, 20]} transformOrigin='center' className="margin" >
-      <Text px='20px' mb={4} textAlign='center' fontWeight="700" fontSize={["lg", "x-large", "xx-large"]}> Card Features</Text>
+    <Box as={motion.div} ref={ref} style={{ scale: scaleProgress, opacity: opacityProgress }}  transformOrigin='center' my={20}   className="margin" >
+      <Text px='20px'textAlign='center'  mb={8}  fontWeight="700" fontSize={["lg", "x-large", "xx-large"]}> Card Features</Text>
 
       <Grid templateRows={["repeat(2, 1fr)", "repeat(2, 1fr)"]} 
       templateColumns={["1fr", "1fr", "repeat(2, 1fr)"]} maxW='1000px' mx='auto'>

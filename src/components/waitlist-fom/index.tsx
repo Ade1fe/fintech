@@ -80,7 +80,7 @@ const WaitlistForm: React.FC = () => {
 
 
   return (
-    <div className="" >
+    <Box my="20" >
       <Box as={motion.div} ref={ref} style={{ scale: scaleProgress, opacity: opacityProgress }} transformOrigin='bottom' p={4} maxW='1300px' mx='auto' textAlign='center' mt={14}>
       <Box w={['full', ]} mb={5}>
      <Text fontSize={["lg", "x-large", "xx-large"]}fontWeight="bold" mb={1}>
@@ -124,7 +124,7 @@ const WaitlistForm: React.FC = () => {
           </Modal>
         )}
       </Box>
-    </div>
+    </Box>
   );
 };
 

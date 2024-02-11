@@ -13,11 +13,11 @@ const Hero: React.FC<HeaderProps> = ({handleJoinWaitlist} ) => {
     target: ref,
     offset: ['1', '1.33 1'],
   });
-  const scaleProgress = useTransform(scrollYProgress, [0.7, 0.9], [0.8, 1]);
+  const scaleProgress = useTransform(scrollYProgress, [0.7, 0.9], [0.9, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
  
   return (
-    <Box as={motion.div} ref={ref} style={{ scale: scaleProgress, opacity: opacityProgress }} transformOrigin='left'>
+    <Box as={motion.div} ref={ref} style={{ scale: scaleProgress, opacity: opacityProgress }} transformOrigin='center'>
       <Box py={['8',13,17, '24']} display='flex' alignItems='center' justifyContent='center' >
 
      
